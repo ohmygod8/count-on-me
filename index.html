@@ -1,57 +1,8 @@
-<html> 
-<head>
-    <title>Greeting Message</title> 
-    <style>
-#lbl {
-    font-family: monospace;
-    font-size: xx-large;
-    color: #626262;
-    padding: 5px;
-    border: 1px solid #ececec;
-    text-align: center;
-    line-height: 1.5;
-    height:85%
+<h1>Count on me</h1>
+<p>
+Count on me is a visual timer for both kids and adults. For people dealing with autism, ADHD, or other cognitive conditions, this time management tool can bring more independence and help create a smoother daily routine. 
 
+Use it for workouts, pomodoro, focus time, productivity and what else you need a count down for. 
+With "Count on me," time is visualized within your app, making it easy to see how much time there is left. Choose between 5, 10, 15, or 25 minutes. When the time is up, a sound is played.
 
-}
-#date{
-    font-size:large;
-}
-body{
-    background-color: aliceblue;
-}
-    </style>
-</head>
-<body>
-    <div id="lbl"></div>
-</body>
-
-<script>
-    var weekday = new Array(7);
-    weekday[0] = "Sunday";
-    weekday[1] = "Monday";
-    weekday[2] = "Tuesday";
-    weekday[3] = "Wednesday";
-    weekday[4] = "Thursday";
-    weekday[5] = "Friday";
-    weekday[6] = "Saturday";
-
-    
-    var today = new Date();
-    var hrs = today.getHours();
-    var dayOfWeek = weekday[today.getDay()];
-    var date = dayOfWeek+" " + today.getDate() + "/" +(today.getMonth()+1) +'/'+today.getFullYear()  ;
-
-    var greet;
-
-    if (hrs < 12)
-        greet = 'Good Morning  ';
-    else if (hrs >= 12 && hrs <= 17)
-        greet = 'Good Afternoon ';
-    else if (hrs >= 17 && hrs <= 24)
-        greet = 'Good Evening  ';
-
-    document.getElementById('lbl').innerHTML =
-        greet+=`<div id="date"> It's ${date}</div>`;
-</script> 
-</html>
+    </p>
