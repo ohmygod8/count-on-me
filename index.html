@@ -9,31 +9,38 @@
             padding: 2rem;
             
         }
-        @media only screen and (max-width: 767px){
-        .hero {
-    
-        }}
-
-        .hero {
-           padding: 2rem 0rem; 
-           
+       
+        .ingress {
+            font-size: 2.5rem;
         }
        
         .count-on-me__button a {
-           padding: 1.5rem;
+            position: relative;
+           padding: 1.5rem 3rem 1.5rem 1.5rem;
            border-radius: 3px;
            display: inline-block;
-           background-color: #FAB2BE;
+           background-color: #ECC22D;
            font-family: 'Inter', sans-serif;
            text-decoration: none;
            color: black;
            font-weight: 700;
-    
+           border: 2px solid black;
+        }
+        
+        .count-on-me__arrow {
+            position: absolute;
+            top: 20px;
+            right: 12px;
+            width: 30px;
+        }
+        .count-on-me__button img:hover {
+          filter: invert()
         }
         .count-on-me__button a:hover {
         
            background-color: black;
            transition: all 0.3s;
+           color: white;
            
     
         }
@@ -48,7 +55,7 @@
         }
 
         p { 
-             
+             font-size: 1.6rem;
 	        font-family: 'Inter', sans-serif;
 	  }
     </style>
@@ -56,29 +63,31 @@
 <html>
 
 <!-- Count on Me -->
-    <div class="hero">
-        <h1>Count on me</h1>
-    </div>
+   
 
 
   <div class="content">
-        <p>
+        <p class="ingress">
         Count on me is a visual timer for both kids and adults. 
         For people dealing with autism, ADHD, or other cognitive conditions, this time management tool 
         can bring more independence and help create a smoother daily routine. 
         </p>
-        
-        <h2>Everyone can use it</h2>
+        <br>
+        <br>
+        <h2>Time whatever you want</h2>
         <p>
         Use it for workouts, pomodoro, focus time, productivity and what else you need a count down for. 
         With "Count on me," time is visualized within your app, making it easy to see how much time there is left. Choose between 5, 10, 15, or 25 minutes. When the time is up, a sound is played.
     
         </p>
   </div>
+        <br>
+        <br>
 
   <div class="count-on-me__button">
     <a href="https://micas.se">
-        Download the app
+        Download the app 
+        <img src="https://micas.se/wp-content/themes/micas-theme/assets/icons/arrow-short-right.svg" class="count-on-me__arrow">
     </a>
     
  
