@@ -14,17 +14,24 @@
         padding: 3rem;
     }
     .cta__text {
-       
-        background-color: darkcyan;
+       color: white;
+        background-color: black;
         font-size: 2rem;
     }
     .cta__button {
-        background-color: black;
+        background-color: #ECC22D;
     }
     .cta__button a {
         text-decoration: none;
         color: white;
         font-size: 1.4rem;
+    }
+    .appstore {
+        display: block; 
+    }
+    .count-on-me-logo {
+        display: flex;
+        margin: 0 auto;
     }
 /*        
         .cta-button a {
@@ -41,10 +48,13 @@
         }
         */
         .icon-arrow {
-            position: absolute;
+            /* position: absolute;
             top: 20px;
-            right: 12px;
-            width: 30px;
+            right: 12px; */
+            padding-top: 2rem;
+            width: 50px;
+            filter: invert();
+            transform: rotate(90deg);
       }
         /* 
         .cta-button img:hover {
@@ -72,9 +82,11 @@
                     <div class="cta__text">
                         
                             Start timing and download the app.
-                            
-                               
-                       
+                            <br>
+                            <a href="https://micas.se" target="_blank">
+                            <img src="https://micas.se/wp-content/themes/micas-theme/assets/icons/arrow-short-right.svg" class="icon-arrow">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" class="appstore" alt="">
+                            </a>
                     </div>
 
 
@@ -82,11 +94,13 @@
                     
                     <!-- button -->
                     <div class="cta__button">
+                       
+                       
+                        
                         <a href="https://micas.se" target="_blank">
-                        Get the app 
-                        <br>
-                            <img src="https://micas.se/wp-content/themes/micas-theme/assets/icons/arrow-short-right.svg" class="icon-arrow">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="">
+                        <img src="https://micas.se/wp-content/uploads/2023/06/glad-gubbe.svg" class="count-on-me-logo">
+                        </a>
+                            
                         </a>
                     </div>
                     
